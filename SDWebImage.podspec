@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     # core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
     # core.exclude_files = 'SDWebImage/UIImage+WebP.{h,m}'
     # core.tvos.exclude_files = 'SDWebImage/MKAnnotationView+WebCache.*'
-    core.ios.deployment_target = '7.0'
+    core.vendored_frameworks = "Carthage/Build/iOS/SDWebImage.framework"
   end
 
   s.subspec 'MapKit' do |mk|
