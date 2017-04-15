@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
     # core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
     # core.exclude_files = 'SDWebImage/UIImage+WebP.{h,m}'
     # core.tvos.exclude_files = 'SDWebImage/MKAnnotationView+WebCache.*'
+    core.ios.deployment_target = '7.0'
   end
 
   s.subspec 'MapKit' do |mk|
