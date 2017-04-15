@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.framework = 'ImageIO'
+  s.vendored_frameworks = "Carthage/Build/iOS/SDWebImage.framework"
+  s.prepare_command = "/usr/bin/ruby build_framework.rb"
   
   s.default_subspec = 'Core'
 
